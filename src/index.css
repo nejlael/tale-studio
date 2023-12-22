@@ -96,7 +96,8 @@ nav ul li{
 }
 
 /* Si vous souhaitez styliser le bouton */
-.header-content button {
+button {
+  width: fit-content;
   border-radius: 50px;
   padding:5px  10px;
   border: none;
@@ -369,5 +370,38 @@ nav ul li{
 
 .copyright-section {
   margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  
+  
+}
+
+.form-section-form{
+  background-image: url('/public/images/formBackground.png');
+  margin-left: 20%;
+  background-color: white;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  color: var(--texte-gris);
+  text-align: center;
+}
+.form-section-form p{
+  margin-bottom: 0px;
+}
+
+form{
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+form input, textarea{
+  padding: 5px;
+  margin: 10px 0px;
+  width: 80%;
+  border:solid 0.2px var(--texte-gris);
 }
 

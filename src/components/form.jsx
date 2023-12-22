@@ -15,7 +15,7 @@ const Form = ({type}) => {
         <input type="text" name="name" placeholder="Entrez votre nom"/>
         <input type="email" name="email" placeholder="Entrez votre adresse e-mail"/>
         <textarea name="project-message" placeholder="Parlez nous de votre projet..."></textarea>
-        <button type="submit"> Envoyer </button>
+        <button  type="submit"> Envoyer </button>
       </form>
     </div>
   );
