@@ -38,7 +38,7 @@ body {
   background-color: #1F1F1F;
   background-size: contain;
   color: var(--texte-clair);
-  margin: 0;
+  margin: 0px;
   background-color: var(--fond-noir);
 }
 
@@ -394,6 +394,7 @@ button {
 form{
   padding-bottom: 20px;
   display: flex;
+  width: 100%;
   align-items: center;
   flex-direction: column;
 }
@@ -403,5 +404,24 @@ form input, textarea{
   margin: 10px 0px;
   width: 80%;
   border:solid 0.2px var(--texte-gris);
+}
+
+
+.ask-section{
+  width: 100vw;
+  margin: 0px;
+}
+
+.ask-section-cover{
+  background-image: url(/public/images/banner-form.png);
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+
+.ask-section-content-title{
+  text-align: end;
+  width: 80%;
+  margin: 0px;
 }
 

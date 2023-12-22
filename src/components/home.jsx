@@ -260,11 +260,9 @@ function Home() {
       <Instagram />
       <Timeline />
       <Footer />
-      <Form type={''} />
 
       
     </div>
   );
 }
-
 export default Home;
