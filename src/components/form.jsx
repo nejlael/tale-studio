@@ -1,4 +1,4 @@
-const form = ({type}) => {
+const Form = ({type}) => {
 
   return(
     <div className="form-section-form">
@@ -21,4 +21,4 @@ const form = ({type}) => {
   );
 }
 
-export default formSection;
+export default Form;

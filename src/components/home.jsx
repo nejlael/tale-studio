@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import useScrollAnimation from './animate';
+import Form from './form';
+
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -258,6 +260,8 @@ function Home() {
       <Instagram />
       <Timeline />
       <Footer />
+      <Form type={''} />
+
       
     </div>
   );

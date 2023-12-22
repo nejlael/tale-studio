@@ -35,7 +35,7 @@ p{
 }
 
 body {
-  background-image: url(/public/images/capture-livres-niveaux-gris.jpg);
+  background-color: #1F1F1F;
   background-size: contain;
   color: var(--texte-clair);
   margin: 0;
