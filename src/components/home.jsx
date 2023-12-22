@@ -6,6 +6,30 @@ import Form from './form';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+
+  const links = [
+    {
+      label: 'Home',
+      link: '/'
+    },
+    {
+      label: 'Services',
+      link: '/services'
+    },
+    {
+      label: 'Devis',
+      link: '/devis'
+    },
+    {
+      label: 'Contact',
+      link: '/contact'
+    },
+  ];
+
+  links.forEach((item) => {
+    console.log(item)
+  })
+
   return (
     <nav>
       <div className="logo">
@@ -13,10 +37,11 @@ const Navbar = () => {
       </div>
       <div className="menu">
         <ul>
-          <li>home</li>
-          <li>services</li>
-          <li>devis</li>
-          <li>contact</li>
+          {links.map((item, index) => (
+            <li key={index}>
+              <Link to={item.link}>{item.label}</Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
