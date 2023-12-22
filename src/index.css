@@ -198,10 +198,14 @@ nav ul li{
     background-size: cover;
     padding: 40px 20px;
     text-align: center;
+    display: flex;
   }
   
   .about-content {
     max-width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
   }
   
@@ -210,14 +214,23 @@ nav ul li{
     margin-bottom: 20px;
   }
   
-  .about img {
+  .aboutImage {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    margin-left: 10%;
+  }
+  .signature {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+
   }
   
   .about p {
-    font-size: 1.2em;
+    font-size: 1em;
+    width: 70%;
+    text-align: justify;
   }
 
   .instagram{
