@@ -448,7 +448,10 @@ form input, textarea{
 
 }
 
-
+a {
+  color: var(--texte-clair);
+  text-decoration: none;
+}
 
 @media (max-width: 650px) {
   .form-section-form{
@@ -522,4 +525,215 @@ form input, textarea{
   
   }
   
+}
+
+.services {
+  background-color: rgb(19, 19, 19);
+}
+
+.services-cover {
+  background-image: url(/public/images/services-background.png);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.services-content {
+  width: 90%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.services-title {
+  height: 80%;
+  display: flex;
+  align-items: end;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services-title h1 {
+  font-size: 3em;
+}
+
+.services-content-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.service-content-card {
+  display: flex;
+  margin-bottom: 50px;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-content-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-content-card-rightside{
+  width: 500px;
+}
+
+.service-content-card-leftside,
+.service-content-card-rightside {
+  margin: 10px;
+  text-align: justify;
+}
+
+.service-content-card-leftside h3 {
+  margin-bottom: 10px;
+}
+
+.services-separator {
+  width: 100px;
+  border-top: 1px solid #ccc;
+  margin: 20px 0px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: var(--texte-gris);
+  background-color: var(--texte-clair);
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  color: var(--texte-clair);
+  background-color: var(--texte-gris);
+}
+
+.service-content-card-cover img {
+  width: 100%;
+  height: auto;
+}
+
+.service-content-card-content {
+  padding: 20px;
+  color: #333;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-content-card-content p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+
+  .services {
+    background-color: rgb(19, 19, 19);
+  }
+  
+  .services-cover {
+    background-image: url(/public/images/services-background.png);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+  }
+  
+  .services-content {
+    border: solid pink;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    height: 80%;
+    display: flex;
+    align-items: end;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .services-title h1 {
+    font-size: 3em;
+  }
+  
+  .services-content-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  
+  .service-content-card {
+    border: solid pink;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .service-content-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-content-card-rightside{
+    width: 500px;
+    border: solid red;
+  }
+  
+  .service-content-card-leftside,
+  .service-content-card-rightside {
+    margin: 10px;
+    text-align: justify;
+  }
+  
+  .service-content-card-leftside h3 {
+    margin-bottom: 10px;
+  }
+  
+  .services-separator {
+    width: 100px;
+    border-top: 1px solid #ccc;
+    margin: 20px 0px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--texte-gris);
+    background-color: var(--texte-clair);
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+  
+  .btn-primary:hover {
+    color: var(--texte-clair);
+    background-color: var(--texte-gris);
+  }
+  
+  .service-content-card-cover img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .service-content-card-content {
+    padding: 20px;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service-content-card-content p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+
 }

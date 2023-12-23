@@ -1,4 +1,5 @@
 import { useState } from "react";
+import useScrollAnimation from './animate';
 
 const Form = ({type}) => {
   const [societyName, setSocietyName] = useState('');
@@ -14,8 +15,10 @@ const Form = ({type}) => {
     console.log(message)
   }
 
+  useScrollAnimation('.animate');
+
   return(
-    <div className="form-section-form">
+    <div className="form-section-form animate">
       <form onSubmit={handleSubmit}>
         {type === 'devis' ? 
           <input type="text" name="society-name" placeholder="Nom de votre société" onChange={(e) => setSocietyName(e.target.value)}/>

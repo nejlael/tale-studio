@@ -7,6 +7,7 @@ import About from './about';
 import Instagram from './instagram';
 import Timeline from './timeline';
 import Footer from './footer';
+import { Link } from 'react-router-dom';
 
 
 
@@ -22,7 +23,7 @@ function Home() {
           <h1>Luxurious Marketing</h1>
           <h2>Upgrade your project,  <span style={{ fontWeight: 'bold' }}>elevate your brand</span></h2>
           {/* <Link to="/devis">
-                */<button>Upgrade Now !</button> /*
+                */ <Link to='/devis'><button>Upgrade Now !</button></Link> /*
           </Link> */}
         </div>
       <Servicebar />
