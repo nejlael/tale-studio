@@ -372,16 +372,13 @@ button {
   margin-top: 20px;
 }
 
-@media (max-width: 1000px) {
-  
-  
-}
 
 .form-section-form{
+  margin-top: -100px;
+  margin-bottom: 150px;
   background-image: url('/public/images/formBackground.png');
-  margin-left: 20%;
   background-color: white;
-  width: 450px;
+  width: 350px;
   display: flex;
   justify-content: center;
   color: var(--texte-gris);
@@ -389,9 +386,11 @@ button {
 }
 .form-section-form p{
   margin-bottom: 0px;
+  width: 90%;
 }
 
 form{
+  margin-top: 50px;
   padding-bottom: 20px;
   display: flex;
   width: 100%;
@@ -413,15 +412,114 @@ form input, textarea{
 }
 
 .ask-section-cover{
-  background-image: url(/public/images/banner-form.png);
-  background-size: cover;
-  height: 40vh;
+  background-image: url(/public/images/banner-form.png) ;
+  background-size: cover; 
+  height: 30vh;
   width: 100%;
 }
 
+.ask-section-content{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
 .ask-section-content-title{
-  text-align: end;
-  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
   margin: 0px;
 }
 
+.ask-section-content-title h2{
+  width: 42%;
+  font-size: 2em;
+
+}
+
+.ask-section-content-infos{
+  margin-left: 10%;
+  margin-top: 30px;
+}
+.ask-section-content-infos a{
+  color: var(--texte-clair);
+  text-decoration: none;
+
+}
+
+
+
+@media (max-width: 650px) {
+  .form-section-form{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url('/public/images/formBackground.png');
+    background-color: white;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    color: var(--texte-gris);
+    text-align: center;
+  }
+  .form-section-form p{
+    margin-bottom: 0px;
+    width: 90%;
+  }
+  
+  form{
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  form input, textarea{
+    padding: 5px;
+    margin: 10px 0px;
+    width: 80%;
+    border:solid 0.2px var(--texte-gris);
+  }
+  
+  
+  .ask-section{
+    width: 100vw;
+    margin: 0px;
+  }
+  
+  .ask-section-cover{
+    background-image: url(/public/images/banner-form.png) ;
+    background-size: cover; 
+    height: 30vh;
+    width: 100%;
+  }
+  
+  .ask-section-content{
+    display: flex;
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .ask-section-content-title{
+    height: 80%;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    margin: 0px;
+  }
+  
+  .ask-section-content-title h2{
+    margin-left: 20%;
+    width: 40%;
+    font-size: 2em;
+  
+  }
+  
+  .ask-section-content-info{
+  
+  }
+  
+}
