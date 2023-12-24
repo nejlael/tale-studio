@@ -30,7 +30,7 @@ const Service = () => {
       </div>
       <div className="services-content">
        
-      <div className="services-single-content animate" dangerouslySetInnerHTML={{ __html: content.content }}></div>
+      <div className="services-single-content" dangerouslySetInnerHTML={{ __html: content.content }}></div>
       </div>
       <Footer />
     </section>

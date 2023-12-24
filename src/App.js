@@ -7,6 +7,7 @@ import Contact from './pages/contact';
 import Devis from './pages/devis';
 import Services from './pages/services';
 import Service from './pages/service';
+import Confirmation from './pages/confirmation';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path='/devis' element={<Devis />} />
           <Route path='/services' element={<Services />} />
           <Route path='/service/:id' element={<Service />} />
+          <Route path='/confirmation' element={<Confirmation />} />
         </Routes>
       </BrowserRouter>
     </div>
