@@ -1,6 +1,9 @@
 import services from "../data/services";
 import Navbar from "../components/navbar";
 import useScrollAnimation from '../components/animate';
+import Footer from "../components/footer";
+import { Link } from "react-router-dom";
+import Service from "./service";
 
 const Services = () => {
   useScrollAnimation('.animate');
@@ -21,7 +24,7 @@ const Services = () => {
               <div className="service-content-card-leftside animate">
                 <h3> {service.title} </h3>
                 <div className="services-separator" />
-                <a href={`/service?id=${service.id}`} className="btn btn-primary"> Plus d'infos</a>
+                <Link to={`/service/${service.id}`} className="btn btn-primary"> Plus d'infos</Link>
               </div>
 
               <div className="service-content-card-rightside animate">
@@ -36,6 +39,7 @@ const Services = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

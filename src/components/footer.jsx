@@ -1,10 +1,13 @@
 import { FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import Instagram from './instagram';
 
 
 
 const Footer = () => {
     return (
       <footer className="footer">
+        
+      <Instagram />
         <div className="footer-content">
           <div className="footer-section">
             <h3>Nous Contacter</h3>

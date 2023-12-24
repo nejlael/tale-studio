@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Contact from './pages/contact';
 import Devis from './pages/devis';
 import Services from './pages/services';
+import Service from './pages/service';
 
 const App = () => {
   return (
@@ -17,9 +18,9 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
           <Route path='/devis' element={<Devis />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/service/:id' element={<Service />} />
         </Routes>
       </BrowserRouter>
-      {/* Le reste de votre application */}
     </div>
   );
 };

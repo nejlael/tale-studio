@@ -1,12 +1,6 @@
 import useScrollAnimation from './animate';
+import Banner from './singleBanner';
 
-const Banner = () => {
-    return (
-      <div className="banner">
-        
-      </div>
-    );
-  };
 
 
 const PresentationCards = () => {

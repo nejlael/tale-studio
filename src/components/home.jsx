@@ -8,6 +8,8 @@ import Instagram from './instagram';
 import Timeline from './timeline';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import Banner from './singleBanner';
+
 
 
 
@@ -31,7 +33,7 @@ function Home() {
 
       <Bannerpresentation /> 
       <About />
-      <Instagram />
+      <Banner />
       <Timeline />
       <Footer />
 

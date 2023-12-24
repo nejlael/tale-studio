@@ -1,23 +1,38 @@
-import { useParams } from "react-router-dom";
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import services from "../data/services";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 const Service = () => {
   const { id } = useParams();
+  const serviceId = parseInt(id);
 
-  const content = services.find(service => service.id === id);
+  const content = services.find(service => service.id === serviceId);
 
-  return(
-    <section className="services">
-    <div className="services-cover">
-
-    </div>
-    <div className="services-content">
-      <div className="services-title">
-        <h1> {content.title} </h1>
+  if (!content) {
+  
+    return (
+      <div>
+        <h2>Service non trouvé</h2>
       </div>
-      <div className="services-single-content" dangerouslySetInnerHTML={content.content}></div>
-    </div>
-  </section>
+    );
+  }
+
+  return (
+    <section className="services">
+      <div className="services-cover">
+      <Navbar />
+        <div className="services-title">
+          <h1>{content.title}</h1>
+        </div>
+      </div>
+      <div className="services-content">
+       
+      <div className="services-single-content" dangerouslySetInnerHTML={{ __html: content.content }}></div>
+      </div>
+      <Footer />
+    </section>
   );
 }
 
