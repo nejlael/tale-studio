@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import services from "../data/services";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import useScrollAnimation from '../components/animate';
 
 const Service = () => {
   const { id } = useParams();
@@ -29,7 +30,7 @@ const Service = () => {
       </div>
       <div className="services-content">
        
-      <div className="services-single-content" dangerouslySetInnerHTML={{ __html: content.content }}></div>
+      <div className="services-single-content animate" dangerouslySetInnerHTML={{ __html: content.content }}></div>
       </div>
       <Footer />
     </section>
