@@ -16,9 +16,9 @@ const Services = () => {
           <h1> NOS <br /> SERVICES </h1>
         </div>
       </div>
-      <div className="services-content">
+      <div className="services-content animate">
         
-        <div className="services-content-cards">
+        <div className="services-content-cards animate">
           {services.map((service, index) => (
             <div key={service.id} className={`service-content-card ${index % 2 === 0 ? 'left' : 'right'} `}>
               <div className="service-content-card-leftside animate">
