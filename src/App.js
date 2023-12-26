@@ -12,7 +12,6 @@ import Confirmation from './pages/confirmation';
 const App = () => {
   return (
     <div className="App">
-
       <BrowserRouter >
         <Routes>
         <Route index path='/' element={<Home />} />

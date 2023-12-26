@@ -17,7 +17,7 @@ const Devis = () => {
       </div>
 
       <div className="ask-section-content">
-      <Form type={'devis'} />
+      <Form formName="devis" type={'devis'} />
         
         <div className="ask-section-content-infos">
           <p><b> Nous appeler : </b></p>

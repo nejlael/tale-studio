@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
 
       <div className="ask-section-content">
-        <Form type={''} />
+        <Form type={''} formName="contact" />
         
         <div className="ask-section-content-infos">
           <p><b> Nous appeler : </b></p>

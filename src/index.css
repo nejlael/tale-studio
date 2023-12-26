@@ -943,3 +943,6 @@ li{
   text-transform: uppercase;
   text-align: center;
 }
+[hidden]{
+  display: none;
+}

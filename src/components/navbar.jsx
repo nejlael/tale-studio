@@ -23,9 +23,6 @@ const Navbar = () => {
       },
     ];
   
-    links.forEach((item) => {
-      console.log(item)
-    })
   
     return (
       <nav>
