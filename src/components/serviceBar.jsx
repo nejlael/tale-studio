@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const Servicebar = () => {
     useEffect(() => {
       const servicesContainer = document.getElementById("services-container");
-      const services = ["Graphisme", "Web Design", "Digital Strategy", "Shooting", "Events", "Mobile App"];
+      const services = ["Graphic design", "Web Design", "Digital Strategy", "Photography", "Events"];
   
       // Dupliquer les services pour créer un effet de défilement continu
       for (let i = 0; i < 5; i++) {
